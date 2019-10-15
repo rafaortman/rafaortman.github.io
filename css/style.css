@@ -61,7 +61,6 @@ nav a:focus {
 /*navigation*/
 
 header .navbar {
-	padding: 30px 30px 30px 0;
 	transition: all .5s ease-out;
 }
 
@@ -298,11 +297,32 @@ header .inbody .navbar-brand h1 {
 	border-radius: 1em;
 }
 
+#info h3 {
+	font-family: 'Kreon';
+	margin-bottom: 1rem;
+	padding-bottom: .5em;
+	font-weight: 900;
+	border-bottom: 1px dotted #000;
+}
+
 #info p {
 	font-size: 0.9em;
 	line-height: 1.8em;
 	margin-bottom: 0.9em;
 	text-align: left;
+}
+
+#info .contato a {
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+#info .contato i {
+	vertical-align: middle;
+}
+
+#info .contato span {
+	margin-left: .5rem;
 }
 
 /*Servicos*/
@@ -414,28 +434,3 @@ audio { width: 100%; }
 
 .hidden {display: none;}
 .form-message {padding: 10px; font-size: 0.7em; font-weight: 700;}
-
-address {
-	display: block;
-	margin-top: 1em;
-	padding-top: 1em;
-	border-top: 1px dotted #999;
-	font-size: 0.7em;
-	font-weight: 700;
-	letter-spacing: 0.1em;
-	/*text-transform: uppercase;*/
-	color: #333;
-}
-
-address span, address i {
-	vertical-align: middle;
-}
-
-address i {
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
-address i.fa-envelope {
-	margin-right: 5px;
-}

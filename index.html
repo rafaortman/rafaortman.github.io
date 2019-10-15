@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <script src="js/prefixfree.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,7 +21,7 @@
   </script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar-fixed-top" ng-app="contactApp">
+<body data-spy="scroll" data-target=".navbar-fixed-top">
 
 <header>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -44,10 +43,9 @@
       </div><!-- navbar-header -->
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#featured">Home</a></li>
-          <li><a href="#info">Info</a></li>
           <li><a href="#servicos">Atuação</a></li>
-          <li><a href="#portifolio" style="border-bottom:none;">Portifólio</a></li>
+          <li><a href="#portifolio">Portifólio</a></li>
+          <li><a href="#info" style="border-bottom:none;">Sobre</a></li>
         </ul>
       </div><!-- collapse navbar-collapse -->
     </div><!-- container -->
@@ -93,34 +91,7 @@
 </header>
 
 <div class="main">
-  <div class="page" id="info">
-    <div class="content container">
-        <h2>Info</h2>
-        <div class="row">
-          <div class="col-sm-3">
-            <img src="images/rafa.png" alt="Foto pessoal" class="img-responsive center-block">
-          </div>
-         <div class="col-sm-7">
-            <p>
-              Designer, desenvolvedor, professor, pesquisador, músico. Paixões diversas governaram o curso de minha vida. Se a aptidão para o desenho me encaminhou ao campo das artes visuais, o fascínio por tecnologia ampliou minha atuação profissional. A associação entre design e desenvolvimento pavimentou meu ingresso na vida acadêmica, tanto no que diz respeito à pesquisa (na qual integro meu interesse por música), quanto como professor. 
-            </p>
-            <p>
-              Sou formado em comunicação visual pela PUC-Rio, com especialização em design estratégico na ESPM-RJ e mestrado na ESDI/Uerj. Minha <strong><a href="https://drive.google.com/file/d/1l3SMOg_L8uQQez862Il-z6M-aFoIvpHV/view" title="Experiência e visualidade do fonograma — da audição analógica à digital" target="_blank">dissertação</a></strong> de mestrado fala a respeito da experiência do usuário nos ambientes de audição de música. A pesquisa procura investigar a aparente contradição entre o sucesso popular e comercial das plataformas de <em>streaming</em> em oposição ao fenômeno do renascimento do vinil, cuja renda promete superar em breve a venda de CDs. 
-            </p>
-            <p>
-              Minha trajetória profissional começa ainda na década de 1990, na <strong><a href="//www.cvdesign.com.br" target="_blank">CV Design</a></strong>, da qual vim a ser sócio alguns anos depois. A sociedade se extingue quando começo a atuar, primeiro como consultor, a seguir como funcionário, na <strong><a href="//refinariadesign.com.br" target="_blank">Refinaria Design</a></strong>, onde estou até hoje.
-            </p>
-            <p>
-              Como professor, minha experiência se inicia com as aulas de ferramentas de design e tecnologias da web na <strong><a href="http://www.dualpixel.com.br" target="_blank">dualpixel</a></strong>. Logo após o mestrado, passo a ministrar diversas disciplinas na gradução de engenharia de software e design no <strong><a href="://www.infnet.edu.br" target="_blank">Instituto Infnet</a></strong>.
-            </p>
-            <p>
-              Além de minha atuação em design e tecnologia, sou músico, tendo lançado um <strong><a href="https://youtu.be/pUeK6xNoxk4" target="_blank">álbum</a></strong> (com a colaboração da cantora Olívia Rangel) de composições próprias. Neste trabalho, arranjei e toquei diversos instrumentos. Conheço também a área de produção musical e possuo meu próprio estúdio.
-            </p>
-          </div>
-
-        </div>
-    </div><!-- content container -->
-  </div><!-- info page -->
+  
 
   <div class="page" id="servicos">
     <div class="content container">
@@ -265,6 +236,50 @@
   </div><!-- portifolio page -->
 </div><!-- main -->
 
+<div class="page" id="info">
+    <div class="content container">
+        <h2>Sobre</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="images/rafa.png" alt="Foto pessoal" class="img-responsive center-block">
+          </div>
+         <div class="col-sm-7">
+            <p>
+              Designer, desenvolvedor, professor, pesquisador, músico. Paixões diversas governaram o curso de minha vida. Se a aptidão para o desenho me encaminhou ao campo das artes visuais, o fascínio por tecnologia ampliou minha atuação profissional. A associação entre design e desenvolvimento pavimentou meu ingresso na vida acadêmica, tanto no que diz respeito à pesquisa (na qual integro meu interesse por música), quanto como professor. 
+            </p>
+            <h3>Formação</h3>
+            <p>
+              Sou formado em comunicação visual pela PUC-Rio, com especialização em design estratégico na ESPM-RJ e mestrado na ESDI/Uerj. Minha <strong><a href="https://drive.google.com/file/d/1l3SMOg_L8uQQez862Il-z6M-aFoIvpHV/view" title="Experiência e visualidade do fonograma — da audição analógica à digital" target="_blank">dissertação</a></strong> de mestrado fala a respeito da experiência do usuário nos ambientes de audição de música. A pesquisa procura investigar a aparente contradição entre o sucesso popular e comercial das plataformas de <em>streaming</em> em oposição ao fenômeno do renascimento do vinil, cuja renda promete superar em breve a venda de CDs. 
+            </p>
+            <h3>Trajetória profissional</h3>
+            <p>
+              Minha trajetória profissional começa ainda na década de 1990, na <strong><a href="//www.cvdesign.com.br" target="_blank">CV Design</a></strong>, da qual vim a ser sócio alguns anos depois. A sociedade se extingue quando começo a atuar, primeiro como consultor, a seguir como funcionário, na <strong><a href="//refinariadesign.com.br" target="_blank">Refinaria Design</a></strong>, onde estou até a presente data.
+            </p>
+            <p>
+              Tendo começado na área gráfica, com o passar do tempo fui me especializando no desenvolvimento projetos digitais. Hoje atuo como desenvolvedor front-end e designer de interação, associando conhecimentos de UX, usabilidade e design thinking. 
+            </p>
+            <h3>Ensino</h3>
+            <p>
+              Como professor, minha experiência se inicia com as aulas de ferramentas de design e tecnologias da web na <strong><a href="http://www.dualpixel.com.br" target="_blank">dualpixel</a></strong>. Logo após o mestrado, passo a ministrar diversas disciplinas na gradução de engenharia de software e design no <strong><a href="://www.infnet.edu.br" target="_blank">Instituto Infnet</a></strong>.
+            </p>
+            <h3>Música</h3>
+            <p>
+              Além de minha atuação em design e tecnologia, sou músico, tendo lançado um <strong><a href="https://youtu.be/pUeK6xNoxk4" target="_blank">álbum</a></strong> (com a colaboração da cantora Olívia Rangel) de composições próprias. Neste trabalho, arranjei e toquei diversos instrumentos. Conheço também a área de produção musical e possuo meu próprio estúdio.
+            </p>
+            <h3>Contato</h3>
+            <p>Você pode entrar em contato comigo através dos canais abaixo:</p>
+            <div class="contato">
+                <a href="mailto:rafaortman@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i> <span>rafaortman@gmail.com</span></a> &nbsp;
+
+                <a href="https://www.twitter.com/rafaortman" target="_blank" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a> &nbsp;
+                
+                <a href="https://www.linkedin.com/in/rafaortman/" target="_blank" title="Linked-In"><i class="fa fa-linkedin fa-2x"></i></a>
+            </div>
+          </div>
+
+        </div>
+    </div><!-- content container -->
+  </div><!-- info page -->
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -285,23 +300,8 @@
   </div>
 </div><!-- Modal -->
 
-<footer>
-    <address class="text-center">
-
-        <a href="mailto:rafaortman@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i> <span>rafaortman@gmail.com</span></a> &nbsp;
-
-        <a href="https://www.twitter.com/rafaortman" target="_blank" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a> &nbsp;
-        
-        <a href="https://www.linkedin.com/in/rafaortman/" target="_blank" title="Linked-In"><i class="fa fa-linkedin fa-2x"></i></a>
-
-    </address>
-</footer>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
-<script src="js/app.js"></script>
-<script src="js/controllers.js"></script>
 <script src="js/myscript.js"></script>
 </body>
 </html>
