@@ -1,6 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,300i,700&display=swap);
 @import url(https://use.fontawesome.com/releases/v5.11.2/css/all.css);
 
+/* ---------- Paleta ---------- */
+:root {
+    --azul: #436575;
+    --azul-medio: #719aad;
+    --azul-claro: #91b1c0;
+    --azul-suave: #81a5b7;
+    --azul-agua: #b1c8d3;
+    --cinza: #e2eaee;
+    --navy: #273b44;
+    --amarelo: #f4b900;
+    --vermelho: #ef3b39;
+}
+
 /* ---------- Keyframes ---------- */
 @-webkit-keyframes bounceInDown {
 
@@ -180,9 +193,24 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     line-height: 1.4;
-    color: #436575;
-    --cor-dt: #91b1c0;
-    --cor-h2: #436575;
+
+    /* papeis de cor (default = tema branco) */
+    --cor-bg: transparent;
+    --cor-fg: var(--azul);
+    --cor-dt: var(--azul-claro);
+    --cor-h2: var(--azul);
+    --cor-borda: var(--cinza);
+    --cor-menu: var(--azul);
+    --cor-menu-link: var(--cinza);
+    --cor-svg: var(--azul);
+    --cor-foto-bg: var(--azul-agua);
+    --cor-email: var(--azul-suave);
+    --cor-seta: var(--cinza);
+    --cor-banana: var(--amarelo);
+    --cor-logo-txt: var(--cor-fg);
+
+    background-color: var(--cor-bg);
+    color: var(--cor-fg);
     -webkit-transition: 1s;
     transition: 1s;
 }
@@ -294,7 +322,7 @@ main {
 
     section {
         padding: 100px 2rem;
-        border-bottom: 8px solid #e2eaee;
+        border-bottom: 8px solid var(--cor-borda);
         min-height: 100vh;
 
         h2,
@@ -331,7 +359,7 @@ main {
         }
 
         dl a {
-            border-bottom: 2px dotted #f4b900;
+            border-bottom: 2px dotted var(--amarelo);
 
             &:hover {
                 border-bottom-style: solid;
@@ -348,11 +376,11 @@ main {
     img {
         width: 100%;
         display: block;
-        background: #b1c8d3;
+        background: var(--cor-foto-bg);
         max-width: 150px;
         margin: 0 auto 2rem;
         border-radius: 50%;
-        border: 8px solid;
+        border: 8px solid var(--cor-h2);
     }
 }
 
@@ -379,7 +407,7 @@ main {
     }
 
     .banana {
-        fill: #f4b900;
+        fill: var(--cor-banana);
         width: 90px;
         position: absolute;
         -webkit-transition: .5s;
@@ -398,6 +426,7 @@ main {
 
     .logo-txt {
         text-align: right;
+        color: var(--cor-logo-txt);
 
         .nome {
             display: block;
@@ -421,12 +450,12 @@ main {
             display: block;
             margin-top: 7px;
             font-size: .9rem;
-            color: #81a5b7;
+            color: var(--cor-email);
             letter-spacing: .25em;
 
             &:hover {
                 text-decoration: none;
-                color: #ef3b39;
+                color: var(--vermelho);
             }
         }
     }
@@ -467,7 +496,7 @@ main {
             -webkit-transition: .3s;
             transition: .3s;
             display: block;
-            fill: #436575;
+            fill: var(--cor-svg);
             height: 25px;
         }
 
@@ -479,7 +508,7 @@ main {
 }
 
 #menuSite {
-    background-color: #436575;
+    background-color: var(--cor-menu);
     display: -webkit-inline-box;
     display: inline-flex;
     width: 50%;
@@ -489,7 +518,7 @@ main {
         transition: .3s;
         -webkit-box-flex: 1;
         flex: 1;
-        color: #e2eaee;
+        color: var(--cor-menu-link);
         font-size: .9rem;
         letter-spacing: 2px;
         height: 50px;
@@ -550,10 +579,10 @@ main {
         }
 
         &.ativo {
-            background-color: #719aad;
+            background-color: var(--azul-medio);
 
             i {
-                color: #f4b900;
+                color: var(--amarelo);
             }
 
             span {
@@ -563,7 +592,7 @@ main {
             &:after {
                 height: 100%;
                 bottom: 0;
-                background-color: #ef3b39;
+                background-color: var(--vermelho);
             }
         }
     }
@@ -584,7 +613,7 @@ main {
     align-items: center;
     -webkit-transition: .3s;
     transition: .3s;
-    color: #e2eaee;
+    color: var(--cor-seta);
 
     i {
         -webkit-transition: inherit;
@@ -637,15 +666,15 @@ main {
         }
 
         &[data-op=tema-banana] {
-            background-color: #f4b900;
+            background-color: var(--amarelo);
         }
 
         &[data-op=tema-tomate] {
-            background-color: #ef3b39;
+            background-color: var(--vermelho);
         }
 
         &[data-op=tema-asfalto] {
-            background-color: #436575;
+            background-color: var(--azul);
         }
 
         &.ativo {
@@ -656,139 +685,82 @@ main {
 
 /* ---------- Themes ---------- */
 .tema-tomate {
-    background-color: #ef3b39;
-    color: #fff;
-    --cor-dt: #273b44;
-    --cor-h2: #f4b900;
+    --cor-bg: var(--vermelho);
+    --cor-fg: #fff;
+    --cor-dt: var(--navy);
+    --cor-h2: var(--amarelo);
+    --cor-borda: var(--amarelo);
+    --cor-svg: #fff;
+    --cor-foto-bg: var(--amarelo);
+    --cor-email: var(--cinza);
+    --cor-logo-txt: var(--navy);
 
-    #idiomas button svg {
-        fill: #fff;
-    }
-
+    /* item de menu ativo: inverte amarelo/vermelho sobre o fundo vermelho */
     #menuSite a.ativo {
         &:after {
-            background-color: #f4b900;
+            background-color: var(--amarelo);
         }
 
         span {
-            color: #273b44;
+            color: var(--navy);
 
             i {
-                color: #ef3b39;
+                color: var(--vermelho);
             }
         }
     }
 
-    main section {
-        border-bottom-color: #f4b900;
-    }
-
-    .foto img {
-        background-color: #f4b900;
-        border-color: #f4b900;
-    }
-
-    .logo-animado {
-        .banana.ios {
-            mix-blend-mode: overlay;
-        }
-
-        .logo-txt {
-            color: #273b44;
-
-            .email {
-                color: #e2eaee;
-            }
-        }
+    .logo-animado .banana.ios {
+        mix-blend-mode: overlay;
     }
 }
 
 .tema-banana {
-    background-color: #f4b900;
-    color: rgba(0, 0, 0, .7);
-    --cor-dt: #273b44;
-    --cor-h2: #ef3b39;
+    --cor-bg: var(--amarelo);
+    --cor-fg: rgba(0, 0, 0, .7);
+    --cor-dt: var(--navy);
+    --cor-h2: var(--vermelho);
+    --cor-borda: var(--vermelho);
+    --cor-foto-bg: var(--amarelo);
+    --cor-email: #fff;
+    --cor-banana: var(--vermelho);
+    --cor-logo-txt: var(--navy);
 
-    main section {
-        border-bottom-color: #ef3b39;
-
-        a {
-            border-bottom-color: #ef3b39;
-        }
-    }
-
-    .foto img {
-        background-color: #f4b900;
-        border-color: #ef3b39;
-    }
-
-    .logo-animado {
-        .banana {
-            fill: #ef3b39;
-        }
-
-        .logo-txt {
-            color: #273b44;
-
-            .email {
-                color: #fff;
-            }
-        }
+    /* links dentro das secoes seguem a borda */
+    main section a {
+        border-bottom-color: var(--cor-borda);
     }
 }
 
 .tema-asfalto {
-    background-color: #436575;
-    color: #fff;
-    --cor-h2: #f4b900;
+    --cor-bg: var(--azul);
+    --cor-fg: #fff;
+    --cor-h2: var(--amarelo);
+    --cor-borda: var(--amarelo);
+    --cor-menu: var(--amarelo);
+    --cor-menu-link: var(--navy);
+    --cor-svg: #fff;
+    --cor-email: var(--cinza);
+    --cor-seta: var(--navy);
 
-    #idiomas button svg {
-        fill: #fff;
-    }
+    /* mantido intencionalmente com o seletor de descendente (a .ativo) */
+    #menuSite a .ativo span {
+        color: var(--navy);
 
-    #menuSite {
-        background-color: #f4b900;
-
-        a {
-            color: #273b44;
-
-            .ativo span {
-                color: #273b44;
-
-                i {
-                    color: #ef3b39;
-                }
-            }
+        i {
+            color: var(--vermelho);
         }
     }
 
-    .seta-topo {
-        color: #273b44;
-    }
-
-    main section {
-        border-bottom-color: #f4b900;
-    }
-
-    .foto img {
-        border-color: #f4b900;
-    }
-
-    .logo-animado {
-        .banana.ios {
-            mix-blend-mode: overlay;
-        }
-
-        .logo-txt .email {
-            color: #e2eaee;
-        }
+    .logo-animado .banana.ios {
+        mix-blend-mode: overlay;
     }
 }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1080px) {
     .tema-asfalto #headerSite {
-        background-color: #f4b900;
+        background-color: var(--amarelo);
     }
 
     #idiomas {
@@ -800,7 +772,7 @@ main {
     #headerSite {
         top: unset;
         bottom: 0;
-        background-color: #436575;
+        background-color: var(--azul);
         -webkit-box-pack: center;
         justify-content: center;
     }
@@ -953,10 +925,6 @@ main {
     li {
         padding: 1rem 0;
 
-        a:hover {
-            text-decoration: underline;
-        }
-
         a {
             font-size: 1.25rem;
             font-weight: bold;
@@ -997,6 +965,7 @@ main {
                     }
                 }
             }
+
             &:hover {
                 text-decoration: none;
                 color: var(--cor-h2);
@@ -1008,7 +977,6 @@ main {
         text-align: center;
     }
 }
-
 
 /* ---------- "ouça a Blague" ---------- */
 .musica-trigger {
