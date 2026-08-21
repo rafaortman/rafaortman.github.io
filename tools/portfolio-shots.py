@@ -32,6 +32,8 @@ ITEMS = [
     ("ursulatautz",   "https://ursulatautz.com/"),
     ("styleguide",    "https://rafaortman.github.io/styleguide/"),
     ("absolutecinema","https://rafaortman.github.io/absolutecinema/"),
+    ("phonoproject",  "https://rafaortman.github.io/phonoproject/"),
+    ("blague",        "https://blague.com.br/"),
 ]
 
 DESKTOP = {"target": (600, 338), "viewport": {"width": 1280, "height": 720},
